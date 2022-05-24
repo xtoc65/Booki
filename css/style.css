@@ -1,0 +1,963 @@
+:root
+{
+    --bleu: #0065fc;
+    --gris: #f2f2f2;
+    --bleuciel : #deebff;
+    --grisclaire: #d9d9d9;
+}
+
+/**GLOBAL**/
+html 
+{
+    font-size : 62.5% ;  
+} 
+
+* 
+{
+    box-sizing: border-box ;
+}
+
+body
+{
+    font-family: "Raleway", "Sans serif";
+    line-height: normal; 
+    margin: 0px;
+    display: block;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+label
+{
+    position:absolute;
+    left:-999px
+}
+
+ul 
+{
+    list-style:none;
+    padding:0
+}
+.container1 
+{
+    max-width:1400px; /*width:100%*/
+    margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+    padding : 0 15px
+}
+
+.container 
+{
+    max-width:1400px;
+    width: 100%;
+    margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+    padding : 0 15px
+}
+.container2 
+{
+    max-width:1400px;
+    width: 100%;
+    margin: 0 auto; /*top et bottom : 0 left et right : 0*/
+    padding : 0 15px
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 15px;
+}
+
+
+/* header */
+header nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+header nav a 
+{
+    padding: 20px;
+}
+
+.menu
+{
+    padding: 0 32px 32px 32px;
+}
+
+.menu a
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu a:visited
+{
+    color: black;
+}
+
+
+.menu a:hover
+{
+    color: var(--bleu);
+
+}
+
+.menu a:active
+{
+    color: var(--bleu);
+}
+
+.logo
+{
+    height: 50px;
+    margin-right: auto;
+    padding: 0 5px 0 0;
+}
+
+.menu
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+nav ul
+{
+    display: flex; 
+    margin: 0px;
+}
+
+nav li
+{
+   /* width: 120px;*/ 
+    text-align: center;
+    padding-top: 32px;
+}
+
+nav li:hover
+{
+    padding-top: 30px;
+    border-top: 2px solid var(--bleu);
+}
+
+/* titre*/
+
+#titre h1
+{
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+#titre p
+{
+    margin: 5px 3px 15px;
+    font-size: 13px;
+}
+
+/*Formulaire*/
+
+#form
+{
+    display: flex;
+}
+ 
+.fa-map-marker-alt
+{
+    padding: 10px 13px;
+    background-color: var(--gris);
+    border-radius: 10px 0  0 10px;
+    align-items: center;
+    width: 35px;
+    justify-content: center;
+    font-weight: bold;   
+    font-size: 15px; 
+    box-shadow: 0 0 16px #0000002e;
+}
+
+#form input
+{
+    padding-right: 90px;    
+    border: 0 ;
+    text-align: center;
+    font-weight: bold;    
+    box-shadow: 0 0 16px #0000002e;
+}
+
+#form button
+{
+    padding: 10px 25px ;
+    background-color: var(--bleu);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    border: 0 ;
+    cursor: pointer;
+    font-weight: bold;    
+    box-shadow: 0 0 16px #0000002e;
+}
+
+#form button:hover
+{
+    background-color: #bdd2f1;
+    color: black;
+}
+
+.fa-search
+{
+    display: none;
+}
+
+/*Filtre*/
+
+#filtre
+{
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#filtre1
+{
+    padding: 0 15px;
+    display: flex;    
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.items
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+}
+
+.items:hover
+{
+    background-color: var(--gris);
+}
+
+#filtre li
+{
+    font-weight: bold;
+    border: 2px solid var(--gris);
+    border-radius: 20px;
+    align-items: center;
+    height: 30px;
+    padding-right: 20px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.items .fa-solid 
+{
+    color: var(--bleu);
+    background-color: var(--bleuciel);
+    padding: 10px;
+    border-radius: 50px ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.fa-money-bill-wave
+{
+    margin: -2px;
+    margin-right: 5px;
+}
+
+.fa-child-reaching
+{
+    margin: -3px;
+    margin-right: 10px;
+    width: 30px ;
+    height: 30px;
+}
+
+.fa-heart
+{
+    margin: -2px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+    
+.fa-dog
+{
+    margin: -2px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+/*information*/
+
+#info
+{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.fa-info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bleu);
+    border: 1px solid var(--gris);
+    border-radius: 100%;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+/* Section*/
+
+article h3
+{
+    font-weight: bold;   
+    margin: 0;
+}
+
+/* Hébergements + populaire*/
+
+#section
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*étoile*/
+.bleu
+{
+    color: var(--bleu);
+}
+
+.gris
+{
+    color: var(--grisclaire);
+}
+
+/*hébergements à Marseille*/
+.section1
+
+{
+    height:110px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    /* max-width: 100%; */
+    max-height: 100%;
+    /* min-width: 140px; */
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+#hebergements
+{
+    background-color: var(--gris);
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 0 10px ;
+    flex-basis: 65%;    
+}
+
+#afficher
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#hebergements1
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 28px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#hebergements1 div
+{
+    margin: 4px;
+}
+
+#hebergements article 
+{
+    background-color: white;
+    padding: 3px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 30%);
+    width: 30%;
+    /*margin: 0 0 0 -10px;*/
+}
+
+/*Les plus populaires*/
+
+.section2
+{
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    max-height: 100%;
+    min-width: 10px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+    width: 140px;
+    height: 100%;
+}
+
+#section2
+{
+    height: 115px;
+}
+
+#popu article 
+{
+    display: flex;
+    background-color: white;
+    padding: 1px;
+    border-radius: 20px;
+    margin-left:5px;
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 20%);
+}
+
+
+#popu
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--gris);
+    border-radius: 15px;
+    padding: 0 20px 15px 0 ;
+    margin: 0 0 0 25px;    
+    flex-basis: 33%;
+}
+
+#popu div
+{
+    margin: 4px;
+}
+
+
+
+#popu1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 0 15px;
+}
+
+.description
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+/*Activité*/
+#activites article 
+{
+    background-color: white;
+    padding: 1px;
+}
+
+#activites
+{    
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+#article
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#article h3
+{
+    margin: 15px;
+}
+
+.bloc
+{
+    flex: 1;
+}
+
+.bloc1
+{
+    flex: 1;
+    overflow: hidden;
+    height: 430px;
+    width: 22%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.section4
+{
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 10px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+.bloc3
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 190px;
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+    margin: 0 15px 25px ;
+}
+.bloc7
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 190px;
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+    margin: 45px 15px 0 ;
+}
+.section3
+{
+    height:145px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 140px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+.bloc4
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+    margin: 75px 25px 0 ;
+}
+
+.section5
+{
+    height:105px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 140px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+.bloc5
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+    margin: 0 25px ;
+}
+.section6
+{
+    height:155px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 140px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+.bloc6
+{
+    flex: 1;
+    overflow: hidden;
+    height: 430px;
+    width: 22%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #f2f2f2;
+    object-fit: cover;    
+    box-shadow: 0 0 16px #0000002e;
+}
+
+/* pied de page */
+footer
+{
+    display: flex;
+    align-items: baseline;
+    align-content: flex-start;
+    justify-content: space-around;
+    background-color: var(--gris);
+    margin-top: 35px;
+}
+
+footer div
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titre
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin: 0 0 20px 20px;
+    flex: 1;
+}
+
+.titre a:visited
+{
+    color: black;
+}
+.titre a:link, a:visited, a:hover, a:active
+{
+    text-decoration: none;
+}
+
+.titre a:hover
+{
+    color: rgb(124, 75, 75);
+}
+.titre1
+{
+    font-weight: bold;
+}
+
+/*media queries tablette*/
+
+@media (max-width:992px)
+{
+    /*header*/
+    .logo
+    {
+        align-items: center;
+        margin: auto;
+        padding: 6px 0 0 0;
+    }
+    .menu
+    {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 0 60px;
+        border-bottom: 3px solid white;  
+        justify-content: center;
+    }
+    nav li:hover
+    {
+        border-bottom: 1px solid var(--bleu);
+        border-top: white;
+        font-weight: bold;
+    }
+
+     /* filtre */
+     #filtre
+     {
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+     }
+
+    /*hébergement et populaire*/
+    #section
+    {
+        flex-direction: column-reverse;
+    }
+    /* Les plus populaire */
+    #popu
+    {
+        margin: 0;
+    }
+     #etoile
+     {
+         margin: 8px;
+     }
+    /* hebergement a Marseille */
+    #hebergements1
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    #hebergements
+    {
+        width: 100%;
+        margin: 20px 0 0 0;
+        padding: 0 20px 10px;
+    }
+    
+
+    /* Activités à Marseille */
+    
+    #article
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .bloc1
+    {
+        height: 150px;
+        width: 100%;
+        flex: inherit;
+        margin-bottom: 10px;
+    }
+    .bloc3
+    {
+        margin: 0 15px;
+    }
+    #port
+    {
+        height: 110px;       
+    }
+    .bloc5
+    {
+        margin: 0 5px 5px;
+    }
+    .bloc4
+    {
+        margin: 68px 5px 0;
+    }
+    #article h3
+    {
+        margin: 10px;
+    }
+
+    .bloc7
+    {
+        margin: 40px 15px 0;
+    }
+
+    
+    
+    /* footer */
+    footer 
+    {
+        display: flex;
+        flex-direction: row;        
+    }
+    .titre
+    {
+        margin: 0 0 5px 10px;
+        width: 230px;
+    }
+    .titre1
+    {
+        margin: 5px 0 2px 0;
+    }
+
+}
+
+/*Media quieries telephone*/
+
+@media (max-width:768px)
+{ 
+    
+    /*header*/
+    .container1
+    { 
+       padding : 0;
+    }
+
+    nav ul
+    {
+        width: 100%;
+    }
+    nav li
+    {
+        width: 100%;        
+        border-bottom: 3px solid var(--gris);
+    }
+    .menu
+    {
+        padding: 0;
+    }
+
+    /* recherche */
+    .bouton
+    {
+        display: none;
+    }
+   
+    .fa-search
+    {
+        display: inline;
+        background-color: inherit;
+    }
+
+    #form button 
+    {
+        border-radius: 20px;
+        margin-left: -50px;
+    }
+
+    /* filtre */
+    #filtre
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #filtre1
+    {
+        display: flex;
+        padding: 0;
+        gap: 8px 0;
+        margin-top: 0;
+    }
+    
+    /* Les plus populaire */
+    #popu
+    {
+        width: auto;
+        border-radius: 0;
+        margin-left: -10px;
+        margin-right: -15px;
+    }
+    .container2
+    { 
+       padding : 0;
+    }
+    /* hébergements a marseile */
+    #hebergements
+    {
+        background-color: white;
+        align-items: center;
+        margin: 20px 0 0 0;
+    }
+    #hebergements article 
+    {
+        width: 100%;     
+    }
+
+    #hebergement1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Activités à Marseille */
+    #article
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .section4
+    {
+        height:90px;   
+    }
+    #port
+    {
+        height: 100px;
+    }
+    .bloc
+    {
+        width: 100%;
+    }
+    .bloc5
+    {
+        height: 130px;  
+        width: 100%;    
+        margin: 0;
+    } 
+    .section6
+    {
+        height:90px;   
+    }
+    .bloc4
+    {
+        height: 140px;
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+    .section5
+    {
+        height: 100px;
+    }
+   
+    .bloc6
+    {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .bloc3
+    {
+        height: 140px;
+        width: 100%;
+        margin: 10px 0 10px;
+    }
+    .section3
+    {
+        height:90px;   
+    }
+    .bloc7
+    {
+        margin: 0;
+        height: 125px;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* footer */
+    footer div
+    {
+        display: flex;
+        flex-direction: column;        
+    }
+}
+
